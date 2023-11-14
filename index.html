@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Juego de Preguntas</title>
+</head>
+
+<body onload="comenzarTiempo()">
+
+    <h2>¡Tenes 30 segundos para responder las preguntas!</h2>
+
+    <h1 id="segundero"></h1>
+
+    <p>¿De qué color era el caballo blanco de San Martin?</p>
+    <input type="text" id="respuesta1">
+
+    <p>¿Cuánto es 2+2?</p>
+    <input type="number" id="respuesta2">
+
+    <p>¿Cómo te llamas?</p>
+    <input type="text" id="respuesta3">
+
+    <p>¿Cuál es la capital de España?</p>
+    <input type="text" id="respuesta4">
+
+    <p>¿Cuantos ojos tiene un pez?</p>
+    <input type="number" id="respuesta5">
+
+    <div class="container-botones">
+    <button onclick="finalizado()" class="boton-finalizar">¡Finalizar!</button>
+
+    <button onclick="volverAIntentar()" class="boton-volver">Volver a intentar</button>
+    </div>
+
+    <audio id="audioFinal">
+        <source src="gameover.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="codigo.js"></script>
+</body>
+</html>

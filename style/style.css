@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body {
+    background-image: url(../img/fondo.png);
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #ffff;
+    letter-spacing: 2.5px;
+}
+
+h1 {
+    font-size: 60px;
+    color: #ffff;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+p {
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    margin: 8px 0 8px 0;
+    background-color: yellow;
+}
+
+input {
+    height: 25px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 6px;
+    font-size: 30px;
+}
+
+.container-botones{
+    display: flex;
+    width: 500px;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.boton-finalizar {
+    width: 100px;
+    height: 60px;
+    font-size: 22px;
+}
+
+.boton-finalizar:hover {
+    background-color: rgb(29, 151, 29);
+    cursor: pointer;
+}
+
+.boton-volver {
+    width: 100px;
+    height: 60px;
+    font-size: 22px;
+}
+
+.boton-volver:hover {
+    background-color: rgb(226, 36, 36);
+    cursor: pointer;
+}
